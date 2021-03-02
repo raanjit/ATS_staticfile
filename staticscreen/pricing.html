@@ -407,7 +407,31 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-
+._title {
+    font-size: 25px;
+    font-weight: 700;
+}
+.footer_heading {
+    padding: 2rem;
+    background: rgb(214 211 211);
+}
+.footer_link {
+    background: rgb(41, 119, 187);
+    padding: 2%;
+}
+.start_trail {
+    background: rgb(36, 76, 90);
+    padding: 2%;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 20px !important;
+    font-weight: 700;
+}
+.color_fff {
+    color: #fff;
+}
 </style>
 
 <body>
@@ -524,7 +548,7 @@ input[type=number] {
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-12 col-xs-12 border_1 p-3">
+            <div class="col-md-12 col-lg-12 col-xs-12 border_1 p-3 mrb-1">
                 <div class="col-lg-12 col-md-12 col-xs-12 pad_bottom">
                     <div class="col-lg-6 col-md-6 col-xs-12">
                         <label class="nrml_font">Name <span class="clr_red">*</span></label>
@@ -557,6 +581,17 @@ input[type=number] {
                     <button class="actionBtn " onclick="onSubmitClick()"><strong>GET YOUR QUOTE</strong></button>
                 </div>
                 <div class="text-center col-lg-12 col-md-12 col-xs-12 display_none" id="updateID" style="color: red;font-size: 25px;">Sent Successfully</div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-xs-12 pad_2 nrml_font pad_bottom text-center footer_heading">
+                <div class="col-lg-12 col-md-12 col-xs-12 _title">Interested to know more about <span class="link_requ"><a href="https://www.tracktalents.com/features.html">TrackTalents</a></span>?</div>
+                <div class="col-lg-12 col-md-12 col-xs-12">Would you prefer speaking to our Sales team, please call 972-200-1030 or email your queries to
+                sales@tracktalents.com</div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 hidden-xs text-center _title color_fff footer_link">
+                    <h2 class="pos_relative_4" style="display: inline;font-size: 25px;">Want to Start a 14 day Free Trial?</h2>&nbsp;&nbsp;<a href="https://www.tracktalents.com/signup"><button class="start_trail">Start a Free Trial</button></a>
+            </div>
+            <div class="hidden-sm hidden-lg hidden-md visible-xs col-xs-12 text-center _title color_fff footer_link">
+                    <h2 class="pos_relative_4 col-xs-12" style="display: inline;font-size: 25px;">Want to Start a 14 day Free Trial?</h2>&nbsp;&nbsp;<a class="col-xs-12" href="https://www.tracktalents.com/signup"><button class="start_trail">Start a Free Trial</button></a>
             </div>
         </div>
     </div>
