@@ -1,0 +1,94 @@
+.feaList { display: block; font-size: 15px; }
+		.feaList>li { display: inline-block; vertical-align: middle; padding-right: 30px; width: 49%; margin-bottom: 20px; }
+		.feaList>li:nth-child(2n) { padding-right: 0px; }
+		.mn-h24{font-size: 24px;}
+
+
+.freetrial_backclr {
+    background-color: #eaeaea;
+    padding: 1% 400px 0;
+}
+
+@media (min-width: 320px) and (max-width: 680px) {
+
+.feaList>li:nth-child(2n) {
+     padding-right: 30px; 
+}
+}
+
+.padding_0_8{
+    padding: 0px 8rem;
+}
+
+
+.featureSliderBox{
+	text-align: center;
+    border: 1px solid #111;
+    border-radius: 35px;
+    padding: 3rem 1rem!important;
+    background: linear-gradient(#fef1c8, #fcda6d);
+}
+
+.carousel-control.left {
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,.0000) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,.0000) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(rgba(0,0,0,.0000)));
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,.0000) 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(rgba(0,0,0,0)));
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px!important;
+    height: 10px!important;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #1c1a1a!important;
+    border-radius: 10px;
+}
+
+.carousel-indicators .active {
+    width: 12px!important;
+    height: 12px!important;
+    margin: 0;
+    background-color: rgb(41, 119, 187)!important;
+}
+
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    display: none!important;
+}
+.leftRightArrow{
+    font-size: 60px;
+    position: relative;
+    top: 50%;
+    color: #111;
+}

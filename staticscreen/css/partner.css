@@ -1,0 +1,160 @@
+.parallax {
+    background-image: url(https://blog.tracktalents.com/wp-content/uploads/2020/06/CTA-2-Home.png);
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4% 28%;
+    color: #ccc;
+}
+
+.middle_text{
+	text-align: center;
+    color: #ffffff;
+    font-family: "roboto";
+    font-size: 33px;
+    font-weight: 100;
+    text-transform: capitalize;
+    line-height: 1.4em;
+    letter-spacing: 1.8px;
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #fff!important;
+}
+.start_btn{
+	font-family: "Montserrat";
+    font-size: 20px!important;
+    font-weight: 400;
+    text-transform: capitalize;
+    fill: #16163f;
+    color: #16163f;
+    background-color: #d3b574;
+    border-radius: 0px 0px 0px 0px;
+    padding: 2% 10%;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.start_btn:hover {
+	background-color: #ffffff;
+}
+.right_arrow{
+	position: relative;
+    top: 7px;
+    font-size: 28px;
+}
+.pic_title{
+	color: #3d4459;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding-top: 3%;
+}
+.pic_head{
+	color: #4632da;
+    font-family: "Varela Round";
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 1.2em;
+}
+.pad_20{
+	padding: 0 20%;
+}
+
+
+
+
+
+.pad2{
+    padding: 2% 0;
+}
+
+.carousel-control.left {
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,.0000) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,.0000) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(rgba(0,0,0,.0000)));
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,.0000) 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(rgba(0,0,0,0)));
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px!important;
+    height: 10px!important;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #1c1a1a!important;
+    border-radius: 10px;
+}
+
+.carousel-indicators .active {
+    width: 12px!important;
+    height: 12px!important;
+    margin: 0;
+    background-color: rgb(41, 119, 187)!important;
+}
+
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    display: none!important;
+}
+.leftRightArrow{
+    font-size: 60px;
+    position: relative;
+    top: 50%;
+    color: #111;
+}
+
+.start_trail{
+    background: rgb(107, 166, 64);
+    padding: 1rem 2rem;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 20px!important;
+    font-weight: 700;
+}
+
+.marg_Left {
+    margin-left: 15px!important;
+}
+.triangleArrow{
+    font-size: 25px;
+    position: relative;
+    top: 2px;
+    left: 4px;
+}
