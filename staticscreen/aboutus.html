@@ -100,7 +100,7 @@ body {
 }
 
 .pad-3 {
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 a {
@@ -207,7 +207,12 @@ ul.sociall li a {
     margin-top: 40px;
     margin-bottom: 40px;
 }
-
+.row {
+     margin-right: 0px; 
+     margin-left: 0px; 
+     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+     padding-bottom: 10px;
+}
 </style>
 
 <body>
@@ -282,12 +287,16 @@ ul.sociall li a {
                         <a class="footerFont" href="tel:+19722001030"><img src="images/tele.png" style="margin-bottom: 4px;" alt="Phone">&nbsp;+1 972-200-1030 </a>
                         <a class="footerFont" href="mailto:info@tracktalents.com" style="margin-left: 8px;"><i class="fa fa-envelope colorEnvelope"></i>&nbsp;Info@TrackTalents.com</a>
                     </div>
-                    <div class="col-lg-6 col-md-6 p-3 pl-3 hidden-lg hidden-md">
+                    <div class="col-lg-6 col-md-6 p-3 pl-3 visible-sm hidden-xs hidden-lg hidden-md">
                         <a class="footerFont" href="tel:+19722001030"><img src="images/tele.png" style="margin-bottom: 4px;" alt="Phone">&nbsp;+1 972-200-1030 </a>
                         <a class="footerFont" href="mailto:info@tracktalents.com" style="margin-left: 8px;"><i class="fa fa-envelope colorEnvelope"></i>&nbsp;Info@TrackTalents.com</a>
                     </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 p-3 visible-xs hidden-sm hidden-lg hidden-md">
+                        <a class="footerFont col-xs-12 pad_0" href="tel:+19722001030"><img src="images/tele.png" style="margin-bottom: 4px;" alt="Phone">&nbsp;+1 972-200-1030 </a>
+                        <a class="footerFont col-xs-12 pad_0" href="mailto:info@tracktalents.com"><i class="fa fa-envelope colorEnvelope" style="margin-right: 6px;"></i>&nbsp;Info@TrackTalents.com</a>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0 pl-4">
+                <div class="col-lg-6 col-md-12 col-xs-12 mb-4 mb-md-0 pl-4">
                     <p class="footerFont">
                         An advanced Applicant Tracking System with the latest encryption to secure your recruitment workflow, unlimited profile access, complete applicant management, and much more.
                     </p>
@@ -355,7 +364,7 @@ ul.sociall li a {
                             </li>
                         </ul>
                     </div>
-                    <div class="col-xs-6 hidden-sm hidden-md hidden-lg visible-xs mb-4 mb-md-0">
+                    <div class="col-xs-6 hidden-md hidden-lg visible-xs visible-sm mb-4 mb-md-0">
                         <ul class="list-unstyled">
                             <li>
                                 <i class="fa fa-caret-right arrowlin"></i>
@@ -384,7 +393,7 @@ ul.sociall li a {
                     <li (click)="onPrivacyClick()"><a class="footerFont" style="text-decoration: none;" href="https://www.tracktalents.com/privacy.html">Privacy Policy</a></li>
                     <li (click)="onSItemapClick()"><a class="footerFont" style="text-decoration: none;" href="https://www.tracktalents.com/sitemap.html">Sitemap</a></li>
                 </ul>
-                <ul class="copyListt hidden-lg hidden-md visible-sm">
+                <ul class="copyListt hidden-lg hidden-md hidden-sm">
                     <li (click)="onTermsClick()"><a class="footerFont" style="text-decoration: none;" href="https://www.tracktalents.com/termsofservice.html">Terms of Service</a></li>
                     <li (click)="onPrivacyClick()"><a class="footerFont" style="text-decoration: none;" href="https://www.tracktalents.com/privacy.html">Privacy Policy</a></li>
                     <li (click)="onSItemapClick()"><a class="footerFont" style="text-decoration: none;" href="https://www.tracktalents.com/sitemap.html">Sitemap</a></li>
