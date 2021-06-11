@@ -503,13 +503,11 @@
                         <span class="passwrd_errorclass display_none" id="errorName">Enter Name</span>
                     </div>
                     <div class="col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 2rem;padding: 0;">
-                        <div class="col-lg-6 col-md-6 col-xs-12" style="margin-bottom: 2rem">
-                            <div class="col-lg-12 col-md-12 col-xs-12" style="padding-left: 0;">
+                        <div class="col-lg-6 col-md-6 col-xs-12 pad_0" id="manageEmail" style="margin-bottom: 2rem">
                                 <h3 style="margin-top: 0;font-size: 16px;color: #5a606c;font-weight: 700;">Email <span
                                         style="color: red;">*</span></h3>
                                 <input type="text" style="width: 100%;padding: 0.5rem;" id="inputEmail">
                                 <span class="passwrd_errorclass display_none" id="errorEmail">Enter Email</span>
-                            </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-xs-12" style="padding: 0;">
                             <h3 style="margin-top: 0;font-size: 16px;color: #5a606c;font-weight: 700;">Phone <span
@@ -594,6 +592,15 @@
 <script>
     var windowWidth=window.innerWidth
     console.log(windowWidth)
+    if(windowWidth>990){
+        var ele = document.getElementById('manageEmail')
+        ele.classList.remove('pad_0')
+        ele.classList.add('pl-0')
+    }else{
+        var ele = document.getElementById('manageEmail')
+        ele.classList.add('pad_0')
+        ele.classList.remove('pl-0')
+    }
     $(function () {
         function rescaleCaptcha() {
             var width = $('.g-recaptcha').parent().width();
