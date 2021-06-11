@@ -8,415 +8,461 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150072159-1"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150072159-1');
+    </script>
 </head>
 <style type="text/css">
-body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
 
-.pad_0 {
-    padding: 0
-}
+    .pad_0 {
+        padding: 0
+    }
 
-.header-padding {
-    padding-left: 30px;
-    padding-right: 30px;
-}
+    .header-padding {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 
-.txt_justify {
-    text-align: justify;
-}
+    .txt_justify {
+        text-align: justify;
+    }
 
-.txt_center {
-    text-align: center;
-}
+    .txt_center {
+        text-align: center;
+    }
 
-.width_60 {
-    width: 60%
-}
+    .width_60 {
+        width: 60%
+    }
 
-.mrb-1 {
-    margin-bottom: 1rem;
-}
+    .mrb-1 {
+        margin-bottom: 1rem;
+    }
 
-.featurs-subheading {
-    font-size: 24px;
-    font-weight: 700;
-    text-align: left;
-    margin-bottom: 3rem;
-}
+    .featurs-subheading {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: left;
+        margin-bottom: 3rem;
+    }
 
-.topTitleBackground {
-    background: #eaeaea;
-}
+    .topTitleBackground {
+        background: #eaeaea;
+    }
 
-.title {
-    margin: 2rem 0;
-    font-weight: 700;
-}
+    .title {
+        margin: 2rem 0;
+        font-weight: 700;
+    }
 
-.feature-content {
-    font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-
-
-.navbarHeaderPadding {
-    padding: 0.5rem;
-}
-
-.brandPadding {
-    padding: 0px 3rem;
-}
-
-.logoHeight {
-    width: 150px;
-}
-
-.navbar {
-    position: relative;
-    min-height: 50px;
-    margin-bottom: 0px;
-    border: 1px solid transparent;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #333232;
-    font-size: 16px;
-}
-
-.navbar-default {
-    background-color: #fff;
-    border-color: #fff;
-}
-
-.footerBOx {
-    background: #2b3d8f;
-    color: #fff;
-}
-
-.pad-3 {
-    padding: 2rem 0;
-}
-
-a {
-    /*color: rgba(255, 255, 255, 0.60);*/
-    text-decoration: none;
-}
-
-.footerFont {
-    font-size: 15px;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.60);
-}
-
-.colorEnvelope {
-    color: #6ca840;
-}
-
-.p-3 {
-    padding: 3rem;
-}
-
-.pl-3 {
-    padding-left: 3rem;
-}
-
-.pl-4 {
-    padding-left: 4rem;
-}
-
-.copyList>li {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 20px;
-}
-
-.copyListt>li {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 5px;
-}
-
-.copyListt {
-    padding: 0
-}
-
-.copyList {
-    padding: 0
-}
+    .feature-content {
+        font-size: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
 
 
-ul.sociall li {
-    display: inline-block;
-    vertical-align: top;
-    padding-right: 25px;
-}
 
-ul.sociall li a {
-    width: auto;
-    height: auto;
-    display: inline-block;
-    background: transparent;
-    vertical-align: top;
-    text-align: center;
-    padding: 0;
-    color: #fff;
-    font-size: 16px;
-}
+    .navbarHeaderPadding {
+        padding: 0.5rem;
+    }
 
-.sociall {
-    padding: 0
-}
+    .brandPadding {
+        padding: 0px 3rem;
+    }
+
+    .logoHeight {
+        width: 150px;
+    }
+
+    .navbar {
+        position: relative;
+        min-height: 50px;
+        margin-bottom: 0px;
+        border: 1px solid transparent;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+        color: #333232;
+        font-size: 16px;
+    }
+
+    .navbar-default {
+        background-color: #fff;
+        border-color: #fff;
+    }
+
+    .footerBOx {
+        background: #2b3d8f;
+        color: #fff;
+    }
+
+    .pad-3 {
+        padding: 2rem 0;
+    }
+
+    a {
+        /*color: rgba(255, 255, 255, 0.60);*/
+        text-decoration: none;
+    }
+
+    .footerFont {
+        font-size: 15px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.60);
+    }
+
+    .colorEnvelope {
+        color: #6ca840;
+    }
+
+    .p-3 {
+        padding: 3rem;
+    }
+
+    .pl-3 {
+        padding-left: 3rem;
+    }
+
+    .pl-4 {
+        padding-left: 4rem;
+    }
+
+    .copyList>li {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 20px;
+    }
+
+    .copyListt>li {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 5px;
+    }
+
+    .copyListt {
+        padding: 0
+    }
+
+    .copyList {
+        padding: 0
+    }
 
 
-.nrml_font {
-    font-size: 16px;
-}
+    ul.sociall li {
+        display: inline-block;
+        vertical-align: top;
+        padding-right: 25px;
+    }
 
-.mrb-40 {
-    margin-bottom: 40px;
-}
+    ul.sociall li a {
+        width: auto;
+        height: auto;
+        display: inline-block;
+        background: transparent;
+        vertical-align: top;
+        text-align: center;
+        padding: 0;
+        color: #fff;
+        font-size: 16px;
+    }
 
-.full-width {
-    width: 100%;
-}
+    .sociall {
+        padding: 0
+    }
 
-/*.pl-4 {
+
+    .nrml_font {
+        font-size: 16px;
+    }
+
+    .mrb-40 {
+        margin-bottom: 40px;
+    }
+
+    .full-width {
+        width: 100%;
+    }
+
+    /*.pl-4 {
     padding-left: 4.2rem;
 }*/
 
-.p-2 {
-    padding: 0 4rem;
-}
+    .p-2 {
+        padding: 0 4rem;
+    }
 
-.mrb-30 {
-    margin-bottom: 30px;
-}
+    .mrb-30 {
+        margin-bottom: 30px;
+    }
 
-.field input,
-.field select,
-.field textarea {
-    height: 30px;
-    line-height: 50px;
-    width: 100%;
-    border: 1px solid #e6e6e6;
-    padding: 0 15px;
-    font-size: 14px;
-    color: #000;
-    background: #fff;
-    position: absolute;
-}
+    .field input,
+    .field select,
+    .field textarea {
+        height: 30px;
+        line-height: 50px;
+        width: 100%;
+        border: 1px solid #e6e6e6;
+        padding: 0 15px;
+        font-size: 14px;
+        color: #000;
+        background: #fff;
+        position: absolute;
+    }
 
-.field input {
-    padding: 0 30px 0 20px;
-}
+    .field input {
+        padding: 0 30px 0 20px;
+    }
 
-.field span {
-    color: #f00000;
-    position: relative;
-    /* right: 20px; */
-    top: 0px;
-    font-size: 16px;
-    left: 11px;
-    z-index: 999;
-}
+    .field span {
+        color: #f00000;
+        position: relative;
+        /* right: 20px; */
+        top: 0px;
+        font-size: 16px;
+        left: 11px;
+        z-index: 999;
+    }
 
-.field,
-.field select {
-    /*height: 40px;*/
-    line-height: 50px;
-    font-size: 13px;
-}
+    .field,
+    .field select {
+        /*height: 40px;*/
+        line-height: 50px;
+        font-size: 13px;
+    }
 
-.field-mobile input,
-.field-mobile select,
-.field-mobile textarea {
-    height: 30px;
-    line-height: 50px;
-    width: 90%;
-    border: 1px solid #e6e6e6;
-    padding: 0 15px;
-    font-size: 14px;
-    color: #000;
-    background: #fff;
-    position: absolute;
-}
+    .field-mobile input,
+    .field-mobile select,
+    .field-mobile textarea {
+        height: 30px;
+        line-height: 50px;
+        width: 90%;
+        border: 1px solid #e6e6e6;
+        padding: 0 15px;
+        font-size: 14px;
+        color: #000;
+        background: #fff;
+        position: absolute;
+    }
 
-.field-mobile input {
-    padding: 0 30px 0 20px;
-}
+    .field-mobile input {
+        padding: 0 30px 0 20px;
+    }
 
-.field-mobile span {
-    color: #f00000;
-    position: relative;
-    /* right: 20px; */
-    top: 0px;
-    font-size: 16px;
-    left: 11px;
-    z-index: 999;
-}
+    .field-mobile span {
+        color: #f00000;
+        position: relative;
+        /* right: 20px; */
+        top: 0px;
+        font-size: 16px;
+        left: 11px;
+        z-index: 999;
+    }
 
-.field-mobile,
-.field-mobile select {
-    /*height: 40px;*/
-    line-height: 50px;
-    font-size: 13px;
-}
+    .field-mobile,
+    .field-mobile select {
+        /*height: 40px;*/
+        line-height: 50px;
+        font-size: 13px;
+    }
 
-.half {
-    display: inline-block;
-    vertical-align: top;
-    width: 47.1%;
-    margin-right: 3%;
-}
+    .half {
+        display: inline-block;
+        vertical-align: top;
+        width: 47.1%;
+        margin-right: 3%;
+    }
 
-.passwrd_errorclass {
-    position: absolute !important;
-    font-size: 10px !important;
-    top: 13px !important;
-    color: red !important;
-    left: 6px!important;
-}
-.passwrd_errorclass-21 {
-    position: absolute !important;
-    font-size: 10px !important;
-    top: 13px !important;
-    color: red !important;
-    left: 21px!important;
-}
-.passwrd_errorclass-subject {
-    position: absolute !important;
-    font-size: 10px !important;
-    top: 118px !important;
-    color: red !important;
-    left: 21px!important;
-}
-.passwrd_errorclass-mobile {
-    position: absolute !important;
-    font-size: 10px !important;
-    top: 13px !important;
-    color: red !important;
-    left: 16px!important;
-}
+    .passwrd_errorclass {
+        position: relative !important;
+        font-size: 10px !important;
+        bottom: -4px !important;
+        color: red !important;
+        right: 0px !important;
+        float: right;
+    }
 
-.display_none {
-    display: none;
-}
+    .passwrd_errorclass-21 {
+        position: absolute !important;
+        font-size: 10px !important;
+        top: 13px !important;
+        color: red !important;
+        left: 21px !important;
+    }
 
-.pl-0 {
-    padding-left: 0;
-}
+    .passwrd_errorclass-subject {
+        position: absolute !important;
+        font-size: 10px !important;
+        top: 118px !important;
+        color: red !important;
+        left: 21px !important;
+    }
 
-.pr-0 {
-    padding-right: 0;
-}
+    .passwrd_errorclass-mobile {
+        position: absolute !important;
+        font-size: 10px !important;
+        top: 13px !important;
+        color: red !important;
+        left: 16px !important;
+    }
 
-.field textarea {
-    font-size: 14px;
-    line-height: 22px;
-    height: 130px;
-    padding: 15px;
-    resize: none;
-}
+    .display_none {
+        display: none;
+    }
 
-.field-mobile textarea {
-    font-size: 14px;
-    line-height: 22px;
-    height: 130px;
-    padding: 15px;
-    resize: none;
-}
+    .pl-0 {
+        padding-left: 0;
+    }
 
-.mrb-10 {
-    margin-bottom: 10rem;
-}
+    .pr-0 {
+        padding-right: 0;
+    }
 
-.addresContactFont {
-    text-decoration: none;
-    font-weight: 700;
-    color: #111;
-}
+    .field textarea {
+        font-size: 14px;
+        line-height: 22px;
+        height: 130px;
+        padding: 15px;
+        resize: none;
+    }
 
-.mrb-2h {
-    margin-bottom: 2vh;
-}
+    .field-mobile textarea {
+        font-size: 14px;
+        line-height: 22px;
+        height: 130px;
+        padding: 15px;
+        resize: none;
+    }
 
-.mailIcon {
-    font-size: 20px;
-    color: #5f9847;
-    display: inline-block;
-    vertical-align: middle;
-}
+    .mrb-10 {
+        margin-bottom: 10rem;
+    }
 
-.addressIcon {
-    font-size: 19px;
-    color: #5f9847;
-    display: inline-block;
-    vertical-align: middle;
-}
+    .addresContactFont {
+        text-decoration: none;
+        font-weight: 700;
+        color: #111;
+    }
 
-.passwrd_errorclass_mssg {
-    position: relative !important;
-    /* left: 483px !important; */
-    font-size: 10px !important;
-    top: 123px !important;
-    color: red !important;
-}
-.btn {
-    font-size: 14px;
-    color: #fff;
-    font-weight: 500;
-    padding: 0;
-    min-width: 177px;
-    height: 55px;
-    line-height: 55px;
-    display: inline-block;
-    border-radius: 60px;
-    background: #6ca840;
-    box-shadow: 0 20px 30px 0 rgba(108, 168, 64, 0.7);
-    outline: none;
-}
-.pad-10{
-    padding: 0 10px;
-}
-.pl-1{
-    padding-left: 1rem
-}
-.row {
-     margin-right: 0px; 
-     margin-left: 0px; 
-     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-     padding-bottom: 10px;
-}
+    .mrb-2h {
+        margin-bottom: 2vh;
+    }
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+    .mailIcon {
+        font-size: 20px;
+        color: #5f9847;
+        display: inline-block;
+        vertical-align: middle;
+    }
 
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
+    .addressIcon {
+        font-size: 19px;
+        color: #5f9847;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .passwrd_errorclass_mssg {
+        position: relative !important;
+        left: 10px !important;
+        font-size: 10px !important;
+        top: 0px !important;
+        color: red !important;
+    }
+
+    .btn {
+        font-size: 14px;
+        color: #fff;
+        font-weight: 500;
+        padding: 0;
+        min-width: 177px;
+        height: 55px;
+        line-height: 55px;
+        display: inline-block;
+        border-radius: 60px;
+        background: rgb(41, 119, 187);
+        /* box-shadow: 0 20px 30px 0 rgba(108, 168, 64, 0.7); */
+        outline: none;
+    }
+
+    .pad-10 {
+        padding: 0 10px;
+    }
+
+    .pl-1 {
+        padding-left: 1rem
+    }
+
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 10px;
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    .inputFieldStyle {
+        /*height: 30px;*/
+        line-height: 50px;
+        width: 90%;
+        border: 1px solid #e6e6e6;
+        padding: 0 15px;
+        font-size: 14px;
+        color: #000;
+        background: #fff;
+    }
+
+    .textareaStyle {
+        font-size: 14px;
+        line-height: 22px;
+        height: 130px;
+        padding: 15px;
+        resize: none;
+        border: 1px solid #e6e6e6;
+        width: 95%;
+    }
+    .btn.focus, .btn:focus, .btn:hover {
+        color: #fff;
+        text-decoration: none;
+        background: #649f44;
+    }
 </style>
 
 <body>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header navbarHeaderPadding">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand brandPadding" href="https://www.tracktalents.com/"><img class="trans logoHeight" src="./images/logo.png" alt="TrackTalents Logo"></a>
+                <a class="navbar-brand brandPadding" href="https://www.tracktalents.com/"><img class="trans logoHeight"
+                        src="./images/logo.png" alt="TrackTalents Logo"></a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -440,390 +486,255 @@ input[type=number] {
             <h1 class="title">Contact Us</h1>
         </div>
     </div>
-    <div class="col-lg-12 col-md-12 hidden-sm hidden-xs mrb-1 nrml_font">
-        <div class="container pad_0 mrb-10">
-            <div class="col-lg-12 col-md-12">
-                <p class=" mrb-30 txt_justify">Our primary goal is to satisfy our customer requirements and enhance their productivity.<br>
-                    Our dedicated support is our hallmark of success; we provide personalized support when required.<br>
-                    Our team will resolve all issues quickly; we ensure your team efficiently increases your placement
-                    ratio.</p>
-                <p class=" mrb-30 txt_justify">For any Support, Sales, or Demo, please complete the below form with a detailed message
-                    outlining your requirements.<br> Our Sales team will revert ASAP.</p>
-            </div>
-            <div class="col-lg-12 col-md-12 nrml_font mrb-10">
-                <div class="col-lg-6 col-md-6">
-                    <div class="col-lg-12 col-md-12 pad_0">
-                        <div class="field col-lg-6 col-md-6 pl-0">
-                            <span>*</span>
-                            <input type="text" placeholder="Full Name" id="firstname">
-                            <span class="passwrd_errorclass display_none" id="validFullName">Invalid Full Name</span>
-                        </div>
-                        <div class="field col-lg-6 col-md-6 pr-0">
-                            <span>*</span>
-                            <input type="text" placeholder="Email" id="emailid">
-                            <span class="passwrd_errorclass-21 display_none" id="validFromEmail">Invalid Email-id</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 pad_0">
-                        <div class="field col-lg-6 col-md-6 pl-0">
-                            <span>*</span>
-                            <input type="text" placeholder="Company Name" id="companyname">
-                            <span class="passwrd_errorclass display_none" id="validCompany">Invalid Company Name</span>
-                        </div>
-                        <div class="field col-lg-6 col-md-6 pr-0">
-                            <span>*</span>
-                            <input type="number" placeholder="Phone Number" maxlength="10" id="phonenumber" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" onkeyup="inputPhone()">
-                            <span class="passwrd_errorclass-21 display_none" id="validPhoneName">Invalid Phone Name</span>
-                        </div>
-                    </div>
-                    <div class="field half marRht">
-                        <span>*</span>
-                        <input type="text" placeholder="Subject" id="subject">
-                        <span class="passwrd_errorclass-subject display_none" id="validSubject">Invalid Subject</span>
-                    </div>
-                    <div class="field">
-                        <span>*</span>
-                        <textarea placeholder="Message" id="message"></textarea>
-                        <span class="passwrd_errorclass_mssg display_none" id="validBody">Invalid Message</span>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="col-lg-12 col-md-12 mrb-2h">
-                        <div class="col-lg-1 col-md-1"><img src="./images/tele.png" alt=""></div>
-                        <div class="col-lg-10 col-md-10">
-                            <a class="addresContactFont" href="tel:+19722001030"> +1 972-200-1030 </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 mrb-2h">
-                        <div class="col-lg-1 col-md-1"><i class="fa fa-envelope mailIcon"></i></div>
-                        <div class="col-lg-10 col-md-10">
-                            <a class="addresContactFont" href="mailto:+info@tracktalents.com"> Info@TrackTalents.com</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 mrb-2h">
-                        <div class="col-lg-1 col-md-1"><i class="fa fa-address-card addressIcon" aria-hidden="true"></i></div>
-                        <div class="col-lg-10 col-md-10 addresContactFont">
-                            400 Chisholm Place, Suite 414, Plano, TX 75075
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12 col-md-12 text-center">
-                <button class="btn" style="border-radius: 30px;" onclick="onSubmitClick()">Submit</button>
-                <div class="text-center col-lg-12 col-md-12 display_none" id="updateID" style="color: red;font-size: 25px;margin-bottom: 2%;">Sent Successfully </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-12 col-xs-12 hidden-lg hidden-md mrb-1 pad_0">
+    <div class="col-lg-12 col-md-12 col-xs-12" style="padding: 5rem 0;">
         <div class="container">
-            <div class="col-sm-12 col-xs-12">
-                <p class=" mrb-30 txt_justify">Our primary goal is to satisfy our customer requirements and enhance their productivity.<br>
-                    Our dedicated support is our hallmark of success; we provide personalized support when required.<br>
-                    Our team will resolve all issues quickly; we ensure your team efficiently increases your placement
-                    ratio.</p>
-                <p class=" mrb-30 txt_justify">For any Support, Sales, or Demo, please complete the below form with a detailed message
-                    outlining your requirements.<br> Our Sales team will revert ASAP.</p>
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-xs-12" style="box-shadow: 0 2px 10px rgba(0,0,0,.05);
+            border-radius: 5px;
+            padding: 4rem;
+            border: solid 1px #dfe3e4;">
+                    <div class="col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 2rem;padding: 0;">
+                        <h3 style="margin-top: 0;font-size: 16px;color: #5a606c;font-weight: 700;">Name <span
+                                style="color: red;">*</span></h3>
+                        <input type="text" style="width: 100%;padding: 0.5rem;" id="inputName">
+                        <span class="passwrd_errorclass display_none" id="errorName">Enter Name</span>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 2rem;padding: 0;">
+                        <div class="col-lg-6 col-md-6 col-xs-12" style="padding-left: 0;">
+                            <h3 style="margin-top: 0;font-size: 16px;color: #5a606c;font-weight: 700;">Email <span
+                                    style="color: red;">*</span></h3>
+                            <input type="text" style="width: 100%;padding: 0.5rem;" id="inputEmail">
+                            <span class="passwrd_errorclass display_none" id="errorEmail">Enter Email</span>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xs-12" style="padding: 0;">
+                            <h3 style="margin-top: 0;font-size: 16px;color: #5a606c;font-weight: 700;">Phone <span
+                                    style="color: red;">*</span></h3>
+                            <input type="number" style="width: 100%;padding: 0.5rem;" maxlength="14" id="inputPhone"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                onkeyup="inputPhoneNumber()">
+                            <span class="passwrd_errorclass display_none" id="errorPhone">Enter Phone</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 2rem;padding: 0;">
+                        <h3 style="margin-top: 0;font-size: 16px;color: #5a606c;font-weight: 700;">Company Name <span
+                                style="color: red;">*</span></h3>
+                        <input type="text" style="width: 100%;padding: 0.5rem;" id="inputCompanyName">
+                        <span class="passwrd_errorclass display_none" id="errorCompany">Enter Company</span>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 2rem;padding: 0;">
+                        <h3 style="margin-top: 0;font-size: 16px;color: #5a606c;font-weight: 700;">How can we help you?
+                            <span style="color: red;">*</span>
+                        </h3>
+                        <select class="select_tag " id="selectQuery" style="width: 100%;padding: 1.5rem;
+                    font-size: 16px;">
+                            <option hidden selected>Choose your query</option>
+                            <option value="I want a product demo">I want a product demo</option>
+                            <option value="I want a free trial">I want a free trial</option>
+                            <option value="I want to contact your sales team">I want to contact your sales team</option>
+                            <option value="I need technical support">I need technical support</option>
+                            <option value="I have a general question">I have a general question</option>
+                        </select>
+                        <span class="passwrd_errorclass display_none" id="errorQuery">Choose one query</span>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 2rem;padding: 0;">
+                        <textarea style="width: 100%;height: 100px;padding: 1rem;" id="inputExplanation"
+                            placeholder="Write a brief message, so that our advisors can respond to you quickly"></textarea>
+                        <span class="passwrd_errorclass display_none" id="errorInputQuery">Enter query</span>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 2rem;padding: 0;">
+                        <div class="g-recaptcha" id="rcaptcha" style="width: 100%;" data-sitekey="6LdqOxMbAAAAAOahsm2-kkvPhekhBGQ6V88GNOzg">
+                        </div>
+                        <span id="captcha" style="color:red" /></span>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 2rem;padding: 0;">
+                        <button class="btn" style="outline: none;" onclick="onSubmit()">Submit</button>
+                        <div class="text-center col-lg-12 col-md-12 display_none" id="updateID" style="color: red;font-size: 20px;margin-bottom: 2%;">Sent Successfully </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-12 col-xs-12 nrml_font mrb-10 pad_0">
-                <div class="col-sm-12 col-xs-12 pad_0">
-                    <div class="col-sm-12 col-xs-12 mrb-2h pad_0">
-                        <div class="col-sm-1 col-xs-1"><img src="./images/tele.png" alt=""></div>
-                        <div class="col-sm-10 col-xs-10">
-                            <a class="addresContactFont" href="tel:+19722001030"> +1 972-200-1030 </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xs-12 mrb-2h pad_0">
-                        <div class="col-sm-1 col-xs-1"><i class="fa fa-envelope mailIcon"></i></div>
-                        <div class="col-sm-10 col-xs-10">
-                            <a class="addresContactFont" href="mailto:+info@tracktalents.com"> Info@TrackTalents.com</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xs-12 mrb-2h pad_0">
-                        <div class="col-sm-1 col-xs-1"><i class="fa fa-address-card addressIcon" aria-hidden="true"></i></div>
-                        <div class="col-sm-10 col-xs-10 addresContactFont">
-                            400 Chisholm Place, Suite 414, Plano, TX 75075
-                        </div>
-                    </div>
+            <div class="col-lg-6 col-md-6 col-xs-12" >
+                <h3>TrackTalents</h3>
+                <h5>400 Chisholm Place, Suite 414</h5>
+                <h5>Plano, TX 75075</h5>
+                <h5>Phone : <a class="weight600" href="tel:+19722001030">972-200-1030 </a></h5>
+                <h5>Email : <a class="weight600" href="mailto:info@tracktalents.com">info@TrackTalents.com </a></h5>
+                <div style="width: 135px;
+            border: solid 1px #85c800;
+            height: 29px;
+            text-align: center;
+            color: #85c800;
+            font-size: 13px;
+            border-radius: 4px;
+            margin-top: 10px;">
+                    <a href="https://www.google.com/maps/search/?api=1&query=tracktalents,400,Chisholm+Place,%20Suite,414+Plano"
+                        target="_blank" style="display: block;
+                    line-height: 28px;
+                    padding: 0 10px;">
+                        <span style="float: left;
+                color: #85c800;
+                font-style: italic;">
+                            Get Direction
+                        </span>
+                        <i class="fa fa-long-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="col-sm-12 col-xs-12 pad_0">
-                    <div class="col-sm-12 col-xs-12 pad_0">
-                        <div class="field-mobile col-sm-12 col-xs-12 pad-10">
-                            <span>*</span>
-                            <input type="text" placeholder="Full Name" id="firstnamemobile">
-                            <span class="passwrd_errorclass-mobile display_none" id="validFullNamemobile">Invalid Full Name</span>
-                        </div>
-                        <div class="field-mobile col-sm-12 col-xs-12 pad-10">
-                            <span>*</span>
-                            <input type="text" placeholder="Email" id="emailidmobile">
-                            <span class="passwrd_errorclass-mobile display_none" id="validFromEmailmobile">Invalid Email-id</span>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xs-12 pad_0">
-                        <div class="field-mobile col-sm-12 col-xs-12 pad-10">
-                            <span>*</span>
-                            <input type="text" placeholder="Company Name" id="companynamemobile">
-                            <span class="passwrd_errorclass-mobile display_none" id="validCompanymobile">Invalid Company Name</span>
-                        </div>
-                        <div class="field-mobile col-sm-12 col-xs-12 pad-10">
-                            <span>*</span>
-                            <input type="number" placeholder="Phone Number" maxlength="10" id="phonenumbermobile" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" onkeyup="inputPhonemobile()">
-                            <span class="passwrd_errorclass-mobile display_none" id="validPhoneNamemobile">Invalid Phone Name</span>
-                        </div>
-                    </div>
-                    <div class="field-mobile col-sm-12 col-xs-12 pad-10">
-                        <span>*</span>
-                        <input type="text" placeholder="Subject" id="subjectmobile" >
-                        <span class="passwrd_errorclass-mobile display_none" id="validSubjectmobile">Invalid Subject</span>
-                    </div>
-                    <div class="field-mobile col-sm-12 col-xs-12 pad-10">
-                        <span>*</span>
-                        <textarea placeholder="Message" id="messagemobile"></textarea>
-                        <span class="passwrd_errorclass_mssg display_none" id="validBodymobile">Invalid Message</span>
-                    </div>
-                </div>
-                
-            </div><br>
-            <div class="col-sm-12 col-xs-12 text-center">
-                <button class="btn" style="border-radius: 30px;" onclick="onSubmitClickmobile()">Submit</button>
-                <div class="text-center col-sm-12 col-xs-12 display_none" id="updateIDmobile" style="color: red;font-size: 25px;margin-bottom: 2%;">Sent Successfully </div>
+                <hr>
+                <div id="googleMap" style="width:100%;height:400px;"></div>
             </div>
         </div>
     </div>
 </body>
-<script type="text/javascript">
-function inputPhone() {
-    var inputBox = document.getElementById("phonenumber");
+<script>
 
-    var invalidChars = [
-        "-",
-        "e",
-    ];
+    function myMap() {
+        const myLatLng = { lat: 33.027066294510796, lng: -96.71262426764137 };
+        var map= new google.maps.Map(document.getElementById("googleMap"), {
+            zoom: 15,
+            center: myLatLng,
+        });
+        new google.maps.Marker({
+            position: myLatLng,
+            map,
+            title: "Tracktalents",
+        });
+    }
 
-    inputBox.addEventListener("keypress", function(e) {
-        if (invalidChars.includes(e.key)) {
-            e.preventDefault();
+    function get_action(form) {
+        var v = grecaptcha.getResponse();
+        if (v.length == 0) {
+            document.getElementById('captcha').innerHTML = "You can't leave Captcha Code empty";
+            return false;
         }
-    });
-
-}
-
-function inputPhonemobile() {
-    var inputBox = document.getElementById("phonenumbermobile");
-
-    var invalidChars = [
-        "-",
-        "+",
-        "e",
-    ];
-
-    inputBox.addEventListener("keydown", function(e) {
-        if (invalidChars.includes(e.key)) {
-            e.preventDefault();
+        else {
+            document.getElementById('captcha').innerHTML = "Captcha completed";
+            return true;
         }
-    });
+    }
 
-}
+</script>
+<script>
+    function inputPhoneNumber() {
+        var inputBox = document.getElementById("inputPhone");
 
-function onSubmitClick() {
-        var firstname = document.getElementById("firstname").value
-        var emailid = document.getElementById("emailid").value
-        var companyname = document.getElementById("companyname").value
-        var phonenumber = document.getElementById("phonenumber").value
-        var subject = document.getElementById("subject").value
-        var message = document.getElementById("message").value
+        var invalidChars = [
+            "-",
+            "e",
+        ];
 
-        if (firstname == '' || firstname == undefined) {
-            var eleFirstname = document.getElementById('validFullName')
-            eleFirstname.classList.remove('display_none')
+        inputBox.addEventListener("keypress", function (e) {
+            if (invalidChars.includes(e.key)) {
+                e.preventDefault();
+            }
+        });
+
+    }
+
+    function onSubmit() {
+        console.log('click')
+        var userName = document.getElementById('inputName').value
+        var userEmail = document.getElementById('inputEmail').value
+        var userPhone = document.getElementById('inputPhone').value
+        var userCompanyName = document.getElementById('inputCompanyName').value
+        var userQuery = document.getElementById('selectQuery').value
+        var userExplanation = document.getElementById('inputExplanation').value
+
+        if (userName.length == 0) {
+            var ele = document.getElementById('errorName')
+            ele.classList.remove('display_none')
             return
         } else {
-            var eleFirstname = document.getElementById('validFullName')
-            eleFirstname.classList.add('display_none')
+            var ele = document.getElementById('errorName')
+            ele.classList.add('display_none')
         }
+
         var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        var result = re.test(emailid)
+        var result = re.test(userEmail)
         if (result == true) {
-            var element = document.getElementById('validFromEmail')
-            element.classList.add('display_none')
+            var ele = document.getElementById('errorEmail')
+            ele.classList.add('display_none')
         } else {
-            var element = document.getElementById('validFromEmail')
-            element.classList.remove('display_none')
+            var ele = document.getElementById('errorEmail')
+            ele.classList.remove('display_none')
             return
         }
 
-        if (companyname == '' || companyname == undefined) {
-            var eleCompany = document.getElementById('validCompany')
-            eleCompany.classList.remove('display_none')
+        if (userPhone.length == 0) {
+            var ele = document.getElementById('errorPhone')
+            ele.classList.remove('display_none')
             return
         } else {
-            var eleCompany = document.getElementById('validCompany')
-            eleCompany.classList.add('display_none')
+            var ele = document.getElementById('errorPhone')
+            ele.classList.add('display_none')
         }
 
-        if (phonenumber == '' || phonenumber == undefined) {
-            var elePhoneName = document.getElementById('validPhoneName')
-            elePhoneName.classList.remove('display_none')
+        if (userCompanyName.length == 0) {
+            var ele = document.getElementById('errorCompany')
+            ele.classList.remove('display_none')
             return
         } else {
-            var elePhoneName = document.getElementById('validPhoneName')
-            elePhoneName.classList.add('display_none')
+            var ele = document.getElementById('errorCompany')
+            ele.classList.add('display_none')
         }
-        if (subject == '' || subject == undefined) {
-            var eleSubject = document.getElementById('validSubject')
-            eleSubject.classList.remove('display_none')
-            return 
-        } else {
-            var eleSubject = document.getElementById('validSubject')
-            eleSubject.classList.add('display_none')
-        }
-        if (message == '' || message == undefined) {
-            var eleBody = document.getElementById('validBody')
-            eleBody.classList.remove('display_none')
+
+        if (userQuery.length == 0 || userQuery == 'Choose your query') {
+            var ele = document.getElementById('errorQuery')
+            ele.classList.remove('display_none')
             return
         } else {
-            var eleBody = document.getElementById('validBody')
-            eleBody.classList.add('display_none')
+            var ele = document.getElementById('errorQuery')
+            ele.classList.add('display_none')
         }
-        
-        var Body = message + '<br/>' + '<strong>FullName: </strong>' + firstname + '<br/>' + '<strong>Email: </strong>' + emailid + '<br/>' + '<strong>CompanyName: </strong>' + companyname + '<br/>' + '<strong>Phone No: </strong>' + phonenumber
 
+        if (userExplanation.length == 0) {
+            var ele = document.getElementById('errorInputQuery')
+            ele.classList.remove('display_none')
+            return
+        } else {
+            var ele = document.getElementById('errorInputQuery')
+            ele.classList.add('display_none')
+        }
 
-        var data = JSON.stringify({ "ToEmail": 'Info@TrackTalents.com', "FromEmail": emailid, "Subject": subject, "Body": Body })
+        var Body = userExplanation + '<br/>' + '<strong>FullName: </strong>' + userName + '<br/>' + '<strong>Email: </strong>' + userEmail + '<br/>' + '<strong>CompanyName: </strong>' + userCompanyName + '<br/>' + '<strong>Phone No: </strong>' + userPhone + '<br/>' + '<strong>Query: </strong>' + userQuery
+
+        var data = JSON.stringify({ "ToEmail": 'Info@TrackTalents.com', "FromEmail": userEmail, "Subject": userQuery, "Body": Body })
 
         // var url = 'https://testapi.tracktalents.com/api/ContactUs'
-        if(window.location.origin == 'https://test.tracktalents.com'){
-            var url='https://testapi.tracktalents.com/api/ContactUs'
-          }else{
-            var url='https://api.tracktalents.com/api/ContactUs'
-          }
-          console.log(data)
+        if (window.location.origin == 'https://test.tracktalents.com') {
+            var url = 'https://testapi.tracktalents.com/api/ContactUs'
+        } else {
+            var url = 'https://api.tracktalents.com/api/ContactUs'
+        }
+        console.log(data)
 
         var xhr = new XMLHttpRequest();
         xhr.open('POST', url, true);
         xhr.setRequestHeader('Content-type', 'application/json');
-        xhr.onreadystatechange = function() {
+        xhr.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 console.log('success');
                 var eleBody = document.getElementById('updateID')
                 eleBody.classList.remove('display_none')
-                setTimeout(function(){
+                setTimeout(function () {
                     var eleBody = document.getElementById('updateID')
                     eleBody.classList.add('display_none')
                 }, 3000);
-                
-                document.getElementById("firstname").value = ''
-                document.getElementById("emailid").value = ''
-                document.getElementById("companyname").value = ''
-                document.getElementById("phonenumber").value = ''
-                document.getElementById("message").value = ''
+
+                document.getElementById("inputName").value = ''
+                document.getElementById("inputEmail").value = ''
+                document.getElementById("inputPhone").value = ''
+                document.getElementById("inputCompanyName").value = ''
+                document.getElementById("selectQuery").value = ''
+                document.getElementById("inputExplanation").value = ''
             }
         };
-        xhr.onload = function() {
-            console.log(this.responseText);
-        };
-        xhr.send(data);
-    }
-
-function onSubmitClickmobile() {
-        var firstname = document.getElementById("firstnamemobile").value
-        var emailid = document.getElementById("emailidmobile").value
-        var companyname = document.getElementById("companynamemobile").value
-        var phonenumber = document.getElementById("phonenumbermobile").value
-        var subject = document.getElementById("subjectmobile").value
-        var message = document.getElementById("messagemobile").value
-
-        if (firstname == '' || firstname == undefined) {
-            var eleFirstname = document.getElementById('validFullNamemobile')
-            eleFirstname.classList.remove('display_none')
-            return
-        } else {
-            var eleFirstname = document.getElementById('validFullNamemobile')
-            eleFirstname.classList.add('display_none')
-        }
-        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        var result = re.test(emailid)
-        if (result == true) {
-            var element = document.getElementById('validFromEmailmobile')
-            element.classList.add('display_none')
-        } else {
-            var element = document.getElementById('validFromEmailmobile')
-            element.classList.remove('display_none')
-            return
-        }
-
-        if (companyname == '' || companyname == undefined) {
-            var eleCompany = document.getElementById('validCompanymobile')
-            eleCompany.classList.remove('display_none')
-            return
-        } else {
-            var eleCompany = document.getElementById('validCompanymobile')
-            eleCompany.classList.add('display_none')
-        }
-
-        if (phonenumber == '' || phonenumber == undefined) {
-            var elePhoneName = document.getElementById('validPhoneNamemobile')
-            elePhoneName.classList.remove('display_none')
-            return
-        } else {
-            var elePhoneName = document.getElementById('validPhoneNamemobile')
-            elePhoneName.classList.add('display_none')
-        }
-        if (subject == '' || subject == undefined) {
-            var eleSubject = document.getElementById('validSubjectmobile')
-            eleSubject.classList.remove('display_none')
-            return
-        } else {
-            var eleSubject = document.getElementById('validSubjectmobile')
-            eleSubject.classList.add('display_none')
-        }
-        if (message == '' || message == undefined) {
-            var eleBody = document.getElementById('validBodymobile')
-            eleBody.classList.remove('display_none')
-            return
-        } else {
-            var eleBody = document.getElementById('validBodymobile')
-            eleBody.classList.add('display_none')
-        }
-        
-        var Body = message + '<br/>' + '<strong>FullName: </strong>' + firstname + '<br/>' + '<strong>Email: </strong>' + emailid + '<br/>' + '<strong>CompanyName: </strong>' + companyname + '<br/>' + '<strong>Phone No: </strong>' + phonenumber
-
-
-        var data = JSON.stringify({ "ToEmail": 'Info@TrackTalents.com', "FromEmail": emailid, "Subject": subject, "Body": Body })
-
-        // var url = 'https://testapi.tracktalents.com/api/ContactUs'
-        if(window.location.origin == 'https://test.tracktalents.com'){
-            var url='https://testapi.tracktalents.com/api/ContactUs'
-          }else{
-            var url='https://api.tracktalents.com/api/ContactUs'
-          }
-          console.log(data)
-
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', url, true);
-        xhr.setRequestHeader('Content-type', 'application/json');
-        xhr.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                console.log('success');
-                var eleBody = document.getElementById('updateIDmobile')
-                eleBody.classList.remove('display_none')
-                setTimeout(function(){
-                    var eleBody = document.getElementById('updateIDmobile')
-                    eleBody.classList.add('display_none')
-                }, 3000);
-                
-                document.getElementById("firstnamemobile").value = ''
-                document.getElementById("emailidmobile").value = ''
-                document.getElementById("companynamemobile").value = ''
-                document.getElementById("phonenumbermobile").value = ''
-                document.getElementById("messagemobile").value = ''
-            }
-        };
-        xhr.onload = function() {
+        xhr.onload = function () {
             console.log(this.responseText);
         };
         xhr.send(data);
     }
 </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAfcDVSBJJ0FK5HLRwbpwgIXFcpv3x1lM&callback=myMap" async defer></script>
+
 <!-- Footer -->
 <div class="col-lg-12 col-md-12 col-xs-12 pad_0 footerBOx">
     <footer class="text-lg-start">
@@ -831,30 +742,43 @@ function onSubmitClickmobile() {
             <div class="row">
                 <div class="col-lg-12 col-md-12 mb-4 mb-md-0">
                     <h5 class="text-uppercase col-lg-6 col-md-6">
-                        <a class="footLog" href="https://www.tracktalents.com/"><img src="images/footLogo.png" alt="TrackTalents Footer Logo"></a>
+                        <a class="footLog" href="https://www.tracktalents.com/"><img src="images/footLogo.png"
+                                alt="TrackTalents Footer Logo"></a>
                     </h5>
                     <div class="col-lg-6 col-md-6 p-3 pl-4 hidden-xs hidden-sm">
-                        <a class="footerFont" href="tel:+19722001030"><img src="images/tele.png" style="margin-bottom: 4px;" alt="Phone">&nbsp;+1 972-200-1030 </a>
-                        <a class="footerFont" href="mailto:info@tracktalents.com" style="margin-left: 8px;"><i class="fa fa-envelope colorEnvelope"></i>&nbsp;Info@TrackTalents.com</a>
+                        <a class="footerFont" href="tel:+19722001030"><img src="images/tele.png"
+                                style="margin-bottom: 4px;" alt="Phone">&nbsp;+1 972-200-1030 </a>
+                        <a class="footerFont" href="mailto:info@tracktalents.com" style="margin-left: 8px;"><i
+                                class="fa fa-envelope colorEnvelope"></i>&nbsp;Info@TrackTalents.com</a>
                     </div>
                     <div class="col-lg-6 col-md-6 p-3 pl-3 visible-sm hidden-xs hidden-lg hidden-md">
-                        <a class="footerFont" href="tel:+19722001030"><img src="images/tele.png" style="margin-bottom: 4px;" alt="Phone">&nbsp;+1 972-200-1030 </a>
-                        <a class="footerFont" href="mailto:info@tracktalents.com" style="margin-left: 8px;"><i class="fa fa-envelope colorEnvelope"></i>&nbsp;Info@TrackTalents.com</a>
+                        <a class="footerFont" href="tel:+19722001030"><img src="images/tele.png"
+                                style="margin-bottom: 4px;" alt="Phone">&nbsp;+1 972-200-1030 </a>
+                        <a class="footerFont" href="mailto:info@tracktalents.com" style="margin-left: 8px;"><i
+                                class="fa fa-envelope colorEnvelope"></i>&nbsp;Info@TrackTalents.com</a>
                     </div>
                     <div class="col-lg-6 col-md-6 col-xs-12 p-3 visible-xs hidden-sm hidden-lg hidden-md">
-                        <a class="footerFont col-xs-12 pad_0" href="tel:+19722001030"><img src="images/tele.png" style="margin-bottom: 4px;" alt="Phone">&nbsp;+1 972-200-1030 </a>
-                        <a class="footerFont col-xs-12 pad_0" href="mailto:info@tracktalents.com"><i class="fa fa-envelope colorEnvelope" style="margin-right: 6px;"></i>&nbsp;Info@TrackTalents.com</a>
+                        <a class="footerFont col-xs-12 pad_0" href="tel:+19722001030"><img src="images/tele.png"
+                                style="margin-bottom: 4px;" alt="Phone">&nbsp;+1 972-200-1030 </a>
+                        <a class="footerFont col-xs-12 pad_0" href="mailto:info@tracktalents.com"><i
+                                class="fa fa-envelope colorEnvelope"
+                                style="margin-right: 6px;"></i>&nbsp;Info@TrackTalents.com</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-xs-12 mb-4 mb-md-0 pl-4">
                     <p class="footerFont">
-                        An advanced Applicant Tracking System with the latest encryption to secure your recruitment workflow, unlimited profile access, complete applicant management, and much more.
+                        An advanced Applicant Tracking System with the latest encryption to secure your recruitment
+                        workflow, unlimited profile access, complete applicant management, and much more.
                     </p>
                     <ul class="sociall">
-                        <li><a href="https://www.facebook.com/TrackTalentscom-114036776676478/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-                        <li><a href="https://twitter.com/TracktalentsC" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.instagram.com/tracktalents/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="https://www.linkedin.com/company/tracktalents/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/TrackTalentscom-114036776676478/" target="_blank"><i
+                                    class="fa fa-facebook-square"></i></a></li>
+                        <li><a href="https://twitter.com/TracktalentsC" target="_blank"><i
+                                    class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/tracktalents/" target="_blank"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/tracktalents/" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6 col-md-12 pad_0 pl-3">
@@ -866,15 +790,18 @@ function onSubmitClickmobile() {
                             </li>
                             <li>
                                 <i class="fa fa-caret-right arrowlin"></i>
-                                <a href="https://www.tracktalents.com/aboutus.html" class="text-dark footerFont">About</a>
+                                <a href="https://www.tracktalents.com/aboutus.html"
+                                    class="text-dark footerFont">About</a>
                             </li>
                             <li>
                                 <i class="fa fa-caret-right arrowlin"></i>
-                                <a href="https://www.tracktalents.com/features.html" class="text-dark footerFont">Features</a>
+                                <a href="https://www.tracktalents.com/features.html"
+                                    class="text-dark footerFont">Features</a>
                             </li>
                             <li>
                                 <i class="fa fa-caret-right arrowlin"></i>
-                                <a href="https://www.tracktalents.com/pricing.html" class="text-dark footerFont">Pricing</a>
+                                <a href="https://www.tracktalents.com/pricing.html"
+                                    class="text-dark footerFont">Pricing</a>
                             </li>
                         </ul>
                     </div>
@@ -882,51 +809,45 @@ function onSubmitClickmobile() {
                         <ul class="list-unstyled">
                             <li>
                                 <i class="fa fa-caret-right arrowlin"></i>
-                                <a href="https://www.tracktalents.com/contact.html" class="text-dark footerFont">Demo</a>
+                                <a href="https://blog.tracktalents.com/" target="_blank"
+                                    class="text-dark footerFont">Blog</a>
                             </li>
                             <li>
                                 <i class="fa fa-caret-right arrowlin"></i>
-                                <a href="https://www.tracktalents.com/contact.html" class="text-dark footerFont">Contact Us</a>
+                                <a href="https://www.tracktalents.com/whyus.html" class="text-dark footerFont">Why
+                                    Us</a>
                             </li>
                             <li>
                                 <i class="fa fa-caret-right arrowlin"></i>
-                                <a href="https://www.tracktalents.com/contact.html" class="text-dark footerFont">Email Us</a>
+                                <a href="https://www.tracktalents.com/partners.html"
+                                    class="text-dark footerFont">Partners</a>
                             </li>
                             <li>
                                 <i class="fa fa-caret-right arrowlin"></i>
-                                <a href="https://www.tracktalents.com/contact.html" class="text-dark footerFont">Support</a>
+                                <a href="https://www.tracktalents.com/contact.html"
+                                    class="text-dark footerFont">Contact Us</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-4 col-xs-6 mb-4 mb-md-0">
-                        <ul class="list-unstyled">
-                            <li>
-                                <i class="fa fa-caret-right arrowlin"></i>
-                                <a href="https://blog.tracktalents.com/" target="_blank" class="text-dark footerFont">Blog</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-caret-right arrowlin"></i>
-                                <a href="https://www.tracktalents.com/whyus.html" class="text-dark footerFont">Why Us</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-caret-right arrowlin"></i>
-                                <a href="https://www.tracktalents.com/partners.html" class="text-dark footerFont">Partners</a>
-                            </li>
-                        </ul>
+
                     </div>
                     <div class="col-xs-6 hidden-md hidden-lg visible-xs visible-sm mb-4 mb-md-0">
                         <ul class="list-unstyled">
                             <li>
                                 <i class="fa fa-caret-right arrowlin"></i>
-                                <a href="https://www.tracktalents.com/termsofservice.html" class="text-dark footerFont">Terms of Service</a>
+                                <a href="https://www.tracktalents.com/termsofservice.html"
+                                    class="text-dark footerFont">Terms of Service</a>
                             </li>
                             <li>
                                 <i class="fa fa-caret-right arrowlin"></i>
-                                <a href="https://www.tracktalents.com/privacy.html" class="text-dark footerFont">Privacy Policy</a>
+                                <a href="https://www.tracktalents.com/privacy.html" class="text-dark footerFont">Privacy
+                                    Policy</a>
                             </li>
                             <li>
                                 <i class="fa fa-caret-right arrowlin"></i>
-                                <a href="https://www.tracktalents.com/sitemap.html" class="text-dark footerFont">Sitemap</a>
+                                <a href="https://www.tracktalents.com/sitemap.html"
+                                    class="text-dark footerFont">Sitemap</a>
                             </li>
                         </ul>
                     </div>
@@ -939,14 +860,20 @@ function onSubmitClickmobile() {
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 text-left hidden-xs" style="padding: 0;padding-left: 2rem;">
                 <ul class="copyList hidden-sm">
-                    <li (click)="onTermsClick()"><a class="footerFont" style="text-decoration: none;" href="https://www.tracktalents.com/termsofservice.html">Terms of Service</a></li>
-                    <li (click)="onPrivacyClick()"><a class="footerFont" style="text-decoration: none;" href="https://www.tracktalents.com/privacy.html">Privacy Policy</a></li>
-                    <li (click)="onSItemapClick()"><a class="footerFont" style="text-decoration: none;" href="https://www.tracktalents.com/sitemap.html">Sitemap</a></li>
+                    <li (click)="onTermsClick()"><a class="footerFont" style="text-decoration: none;"
+                            href="https://www.tracktalents.com/termsofservice.html">Terms of Service</a></li>
+                    <li (click)="onPrivacyClick()"><a class="footerFont" style="text-decoration: none;"
+                            href="https://www.tracktalents.com/privacy.html">Privacy Policy</a></li>
+                    <li (click)="onSItemapClick()"><a class="footerFont" style="text-decoration: none;"
+                            href="https://www.tracktalents.com/sitemap.html">Sitemap</a></li>
                 </ul>
                 <ul class="copyListt hidden-lg hidden-md hidden-sm">
-                    <li (click)="onTermsClick()"><a class="footerFont" style="text-decoration: none;" href="https://www.tracktalents.com/termsofservice.html">Terms of Service</a></li>
-                    <li (click)="onPrivacyClick()"><a class="footerFont" style="text-decoration: none;" href="https://www.tracktalents.com/privacy.html">Privacy Policy</a></li>
-                    <li (click)="onSItemapClick()"><a class="footerFont" style="text-decoration: none;" href="https://www.tracktalents.com/sitemap.html">Sitemap</a></li>
+                    <li (click)="onTermsClick()"><a class="footerFont" style="text-decoration: none;"
+                            href="https://www.tracktalents.com/termsofservice.html">Terms of Service</a></li>
+                    <li (click)="onPrivacyClick()"><a class="footerFont" style="text-decoration: none;"
+                            href="https://www.tracktalents.com/privacy.html">Privacy Policy</a></li>
+                    <li (click)="onSItemapClick()"><a class="footerFont" style="text-decoration: none;"
+                            href="https://www.tracktalents.com/sitemap.html">Sitemap</a></li>
                 </ul>
             </div>
         </div>
@@ -955,3 +882,9 @@ function onSubmitClickmobile() {
 <!-- Footer -->
 
 </html>
+
+
+
+<!-- 6LdqOxMbAAAAADvPYqR80VO1UZRDSb8A-HI-CKMB   Use this secret key for communication between your site and reCAPTCHA. -->
+
+<!-- 6LdqOxMbAAAAAOahsm2-kkvPhekhBGQ6V88GNOzg     Use this site key in the HTML code your site serves to users -->
