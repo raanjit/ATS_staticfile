@@ -443,7 +443,10 @@
         border: 1px solid #e6e6e6;
         width: 95%;
     }
-    .btn.focus, .btn:focus, .btn:hover {
+
+    .btn.focus,
+    .btn:focus,
+    .btn:hover {
         color: #fff;
         text-decoration: none;
         background: #649f44;
@@ -500,11 +503,13 @@
                         <span class="passwrd_errorclass display_none" id="errorName">Enter Name</span>
                     </div>
                     <div class="col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 2rem;padding: 0;">
-                        <div class="col-lg-6 col-md-6 col-xs-12" style="padding-left: 0;">
-                            <h3 style="margin-top: 0;font-size: 16px;color: #5a606c;font-weight: 700;">Email <span
-                                    style="color: red;">*</span></h3>
-                            <input type="text" style="width: 100%;padding: 0.5rem;" id="inputEmail">
-                            <span class="passwrd_errorclass display_none" id="errorEmail">Enter Email</span>
+                        <div class="col-lg-6 col-md-6 col-xs-12" style="margin-bottom: 2rem">
+                            <div class="col-lg-12 col-md-12 col-xs-12" style="padding-left: 0;">
+                                <h3 style="margin-top: 0;font-size: 16px;color: #5a606c;font-weight: 700;">Email <span
+                                        style="color: red;">*</span></h3>
+                                <input type="text" style="width: 100%;padding: 0.5rem;" id="inputEmail">
+                                <span class="passwrd_errorclass display_none" id="errorEmail">Enter Email</span>
+                            </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-xs-12" style="padding: 0;">
                             <h3 style="margin-top: 0;font-size: 16px;color: #5a606c;font-weight: 700;">Phone <span
@@ -542,17 +547,19 @@
                         <span class="passwrd_errorclass display_none" id="errorInputQuery">Enter query</span>
                     </div>
                     <div class="col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 2rem;padding: 0;">
-                        <div class="g-recaptcha" id="rcaptcha" style="width: 100%;" data-sitekey="6LdqOxMbAAAAAOahsm2-kkvPhekhBGQ6V88GNOzg">
+                        <div class="g-recaptcha" id="rcaptcha" style="width: 100%;"
+                            data-sitekey="6LdqOxMbAAAAAOahsm2-kkvPhekhBGQ6V88GNOzg">
                         </div>
                         <span id="captcha" style="color:red" /></span>
                     </div>
                     <div class="col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 2rem;padding: 0;">
                         <button class="btn" style="outline: none;" onclick="onSubmit()">Submit</button>
-                        <div class="text-center col-lg-12 col-md-12 display_none" id="updateID" style="color: red;font-size: 20px;margin-bottom: 2%;">Sent Successfully </div>
+                        <div class="text-center col-lg-12 col-md-12 display_none" id="updateID"
+                            style="color: red;font-size: 20px;margin-bottom: 2%;">Sent Successfully </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-xs-12" >
+            <div class="col-lg-6 col-md-6 col-xs-12">
                 <h3>TrackTalents</h3>
                 <h5>400 Chisholm Place, Suite 414</h5>
                 <h5>Plano, TX 75075</h5>
@@ -585,31 +592,32 @@
     </div>
 </body>
 <script>
+    var windowWidth=window.innerWidth
+    console.log(windowWidth)
+    $(function () {
+        function rescaleCaptcha() {
+            var width = $('.g-recaptcha').parent().width();
+            var scale;
+            if (width < 302) {
+                scale = width / 302;
+            } else {
+                scale = 1.0;
+            }
 
-    $(function(){
-    function rescaleCaptcha(){
-        var width = $('.g-recaptcha').parent().width();
-        var scale;
-        if (width < 302) {
-        scale = width / 302;
-        } else{
-        scale = 1.0; 
+            $('.g-recaptcha').css('transform', 'scale(' + scale + ')');
+            $('.g-recaptcha').css('-webkit-transform', 'scale(' + scale + ')');
+            $('.g-recaptcha').css('transform-origin', '0 0');
+            $('.g-recaptcha').css('-webkit-transform-origin', '0 0');
         }
 
-        $('.g-recaptcha').css('transform', 'scale(' + scale + ')');
-        $('.g-recaptcha').css('-webkit-transform', 'scale(' + scale + ')');
-        $('.g-recaptcha').css('transform-origin', '0 0');
-        $('.g-recaptcha').css('-webkit-transform-origin', '0 0');
-    }
-
-    rescaleCaptcha();
-    $( window ).resize(function() { rescaleCaptcha(); });
+        rescaleCaptcha();
+        $(window).resize(function () { rescaleCaptcha(); });
 
     });
 
     function myMap() {
         const myLatLng = { lat: 33.027066294510796, lng: -96.71262426764137 };
-        var map= new google.maps.Map(document.getElementById("googleMap"), {
+        var map = new google.maps.Map(document.getElementById("googleMap"), {
             zoom: 15,
             center: myLatLng,
         });
@@ -754,7 +762,8 @@
         xhr.send(data);
     }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAfcDVSBJJ0FK5HLRwbpwgIXFcpv3x1lM&callback=myMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAfcDVSBJJ0FK5HLRwbpwgIXFcpv3x1lM&callback=myMap" async
+    defer></script>
 
 <!-- Footer -->
 <div class="col-lg-12 col-md-12 col-xs-12 pad_0 footerBOx">
@@ -845,15 +854,12 @@
                             </li>
                             <li>
                                 <i class="fa fa-caret-right arrowlin"></i>
-                                <a href="https://www.tracktalents.com/contact.html"
-                                    class="text-dark footerFont">Contact Us</a>
+                                <a href="https://www.tracktalents.com/contact.html" class="text-dark footerFont">Contact
+                                    Us</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-xs-6 mb-4 mb-md-0">
-
-                    </div>
-                    <div class="col-xs-6 hidden-md hidden-lg visible-xs visible-sm mb-4 mb-md-0">
+                    <div class="col-lg-4 col-md-4 col-xs-6 hidden-md hidden-lg visible-xs visible-sm mb-4 mb-md-0">
                         <ul class="list-unstyled">
                             <li>
                                 <i class="fa fa-caret-right arrowlin"></i>
@@ -871,6 +877,8 @@
                                     class="text-dark footerFont">Sitemap</a>
                             </li>
                         </ul>
+                    </div>
+                    <div class="col-xs-6 hidden-md hidden-lg visible-xs visible-sm mb-4 mb-md-0">
                     </div>
                 </div>
             </div>
